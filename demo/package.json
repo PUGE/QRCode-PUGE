@@ -1,20 +1,18 @@
 {
-  "name": "qrcode-puge",
-  "version": "1.0.1",
-  "license": "MIT",
-  "description": "The Vue 2.x component of Awesome-qr.js",
-  "author": "Binaryify",
-  "main": "src/main.js",
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "A Vue.js project",
+  "author": "binaryify <zhuangtongfa@qq.com>",
+  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js"
   },
   "dependencies": {
-    "uuid": "^3.1.0",
-    "vue": "^2.5.13"
+    "vue": "^2.5.13",
+    "vue-qr": "^1.2.8"
   },
-  "keywords": ["vue-qr", "vue qr", "vue qrcode", "qr", "vue"],
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
