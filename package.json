@@ -1,15 +1,10 @@
 {
   "name": "qrcode-puge",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "The Vue 2.x component of Awesome-qr.js",
   "author": "PUGE",
   "main": "main.js",
-  "scripts": {
-    "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js",
-    "build": "node build/build.js"
-  },
   "dependencies": {
     "uuid": "^3.1.0",
     "vue": "^2.5.13"

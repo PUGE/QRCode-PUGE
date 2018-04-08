@@ -6,7 +6,7 @@
 
 <script>
 const uuidv4 = require('uuid/v4')
-const AwesomeQR = require('awesome-qr')
+import AwesomeQRCode from './awesome-qr'
 export default {
   props: {
     text: {
