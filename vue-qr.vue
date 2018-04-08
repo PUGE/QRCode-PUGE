@@ -1,6 +1,12 @@
+<template>
+  <div v-if="bindElement">
+    <img v-bind="{id:uuid}">
+  </div>
+</template>
+
+<script>
 const uuidv4 = require('uuid/v4')
-import { toBoolean } from './util.js'
-import AwesomeQRCode from './awesome-qr'
+const AwesomeQR = require('awesome-qr')
 export default {
   props: {
     text: {
@@ -78,7 +84,7 @@ export default {
       default: true
     }
   },
-  name: 'vue-qr',
+  name: 'qr',
   data() {
     return {
       uuid: ''
@@ -153,16 +159,21 @@ export default {
         logoScale: that.logoScale,
         logoMargin: that.logoMargin,
         logoCornerRadius: that.logoCornerRadius,
-        whiteMargin: toBoolean(that.whiteMargin),
+        whiteMargin: this.toBoolean(that.whiteMargin),
         dotScale: that.dotScale,
-        autoColor: toBoolean(that.autoColor),
-        binarize: toBoolean(that.binarize),
+        autoColor: this.toBoolean(that.autoColor),
+        binarize: this.toBoolean(that.binarize),
         binarizeThreshold: that.binarizeThreshold,
         callback: function(dataURI) {
           that.callback && that.callback(dataURI)
         },
         bindElement: that.bindElement ? that.uuid : undefined
       })
+    },
+    toBoolean(val) {
+      if (val === '') return val
+      return val === 'true' || val == '1'
     }
   }
 }
+</script>

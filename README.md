@@ -1,8 +1,4 @@
 # qrcode-puge
-<a href="https://www.npmjs.com/package/vue-qr"><img src="https://img.shields.io/npm/v/vue-qr.svg" alt="Version"></a>
-<a href="https://www.npmjs.com/package/vue-qr"><img src="https://img.shields.io/npm/l/vue-qr.svg" alt="License"></a>
-<a href="https://www.npmjs.com/package/vue-qr"><img src="https://img.shields.io/david/dev/binaryify/vue-qr.svg" alt="devDependencies" ></a>
-<a href="https://www.npmjs.com/package/vue-qr"><img src="https://img.shields.io/david/binaryify/vue-qr.svg" alt="devDependencies" ></a>
 
 The Vue 2.x Component for [SumiMakito's Awesome-qr.js](https://github.com/SumiMakito/Awesome-qr.js)
 
@@ -16,24 +12,24 @@ Example 1|Example 2|Example 3
 ------------ | ------------- | -------------
 <img src="https://raw.githubusercontent.com/Binaryify/vue-qr/master/demo/src/assets/result1.png" width="400"> | <img src="https://raw.githubusercontent.com/Binaryify/vue-qr/master/demo/src/assets/result2.png" width="400"> | <img src="https://raw.githubusercontent.com/Binaryify/vue-qr/master/demo/src/assets/result3.png" width="400">
 
-## Installation
-**install with NPM**
+## 安装
+**使用NPM方式安装**
 ```bash
-npm install vue-qr --save
+npm install qrcode-puge --save
 ```
-**Import**
+**引入**
 ```js
-import VueQr from 'vue-qr'
+import VueQr from 'qrcode-puge'
 
 new Vue({
     components: {VueQr}
 })
 ```
-## Usage
-**In template**
+## 使用
+**示例**
 
 ```html
-<vue-qr :bgSrc='src' :logoSrc="src2" text="Hello world!" height="200" width="200"></vue-qr>
+<qr :bgSrc='src' :logoSrc="src2" text="Hello world!" height="200" width="200"></qr>
 ```
 Parameter | Explanation
 ----|----
